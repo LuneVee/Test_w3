@@ -1,0 +1,12 @@
+name: Säg hej
+on: workflow_dispatch
+jobs:
+  hej:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hälsa
+        run: echo "Hello GitHub Actions! This is the text that have been used to show that this workflow action is working!"
+
+
+
+
