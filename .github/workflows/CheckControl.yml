@@ -1,0 +1,16 @@
+name: CheckControl
+on: pull_request
+
+jobs:
+  Check-README:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check so that README is not empty
+        run:  |
+         if [ ! -s README.md ]; then 
+          echo "README.md not found or is empty!"
+          exit 1
+         if
+         echo "README looking fine."
