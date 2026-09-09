@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Hälsa
-        run: echo "Hej från GitHub Actions!"
+        run: echo "Hej från GitHub Actions! This is thet text that have been used to show that this workflow action is working!"
 
 
 
