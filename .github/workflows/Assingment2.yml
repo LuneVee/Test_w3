@@ -1,0 +1,20 @@
+name: With Push
+on:
+   push:
+      branches: [main]
+
+jobs:
+   Check:
+     runs-on: ubuntu-latest
+     steps:
+        - name: What files exist here?
+          run: ls -la
+
+        - name: Catch kod
+          uses: actions/checkout@v4
+
+        - name: What files exist now?
+          run: ls -la
+
+        - name: How made it?
+          run: echo "${{ github.actor }} pushed to ${{ github.repository }}"
